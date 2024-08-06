@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>ChatSpace</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="/index.html">
+                <h1 class="logo">Chat<span class="S">S</span>pace</h1>
+                </a>
+            <ul>
+                <li><img src="/images/notification.png"></li>
+                <li><img src="/images/inbox.png"></li>
+                <li><img src="/images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="serach-box">
+                <img src="/images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user online" onclick="settingsToggle()">
+                <img src="/images/profile.jpg">
+            </div>
+        </div>
+
+<!-- ''''''''''''''''settings-menu'''''''''''''''''''' -->
+        <div class="settings-menu">
+
+
+            <div id="dark-btn" onclick="darkToggle()">
+                <span></span>
+            </div>
+
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="/images/profile.jpg">
+                    <div>
+                        <p>Lanky Jo</p>
+                        <a href="/profile.html" class="see-profile">See Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="/images/feedback.png">
+                    <div>
+                        <p>Give us a feedback</p>
+                        <a href="#">Help improve our Design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="/images/setting.png" class="settings-icon">
+                    <a href="#">Settings and Privacy <img src="/images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="/images/help.png" class="settings-icon">
+                    <a href="#">Help and Support <img src="/images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="/images/display.png" class="settings-icon">
+                    <a href="#">Display and Accessibility <img src="/images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="/images/logout.png" class="settings-icon">
+                    <a href="#">Logout <img src="/images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+ 
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="important-links">
+                <a href="#">
+                    <img src="/images/news.png"> Latest
+                </a>
+                <a href="#">
+                    <img src="/images/friends.png"> Friends
+                </a>
+                <a href="#">
+                    <img src="/images/group.png"> Groups
+                </a>
+                <a href="#">
+                    <img src="/images/marketplace.png"> Market Place 
+                </a>
+                <a href="#">
+                    <img src="/images/watch.png"> Watch 
+                </a>
+                <a href="#">See More</a>
+            </div>
+
+            <div class="short-cut-links">
+                <p>Your Shortcuts</p>
+                <a href="#">
+                    <img src="/images/shortcut-1.png"> Web Developer
+                </a>
+                <a href="#">
+                    <img src="/images/shortcut-2.png"> WebFlow
+                </a>
+                <a href="#">
+                    <img src="/images/shortcut-3.png"> FullStack Devs
+                </a>
+                <a href="#">
+                    <img src="/images/shortcut-4.png"> Web Experts
+                </a>
+            </div>
+        </div>
+        <!-- '''''''''''''''MAIN CONTENT''''''''''''''''' -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story">
+                    <img src="/images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story">
+                    <img src="/images/member-1.png">
+                    <p>Allison</p>
+                </div>
+                <div class="story">
+                    <img src="/images/member-2.png">
+                    <p>Moses</p>
+                </div>
+                <div class="story">
+                    <img src="/images/member-3.png">
+                    <p>Anna</p>
+                </div>
+                <div class="story">
+                    <img src="/images/member-4.png">
+                    <p>James</p>
+                </div>
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="/images/profile.jpg">
+                    <div>
+                        <p>Lanky Jo</p>
+                        <small><i class="fa-solid fa-earth-americas"></i> Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind Lanky?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="/images/live-video.png"> Go Live</a>
+                        <a href="#"><img src="/images/photo.png"> Photo/Video</a>
+                        <a href="#"><img src="/images/feeling.png"> Feels</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile.jpg">
+                        <div>
+                            <p>Lanky Jo</p>
+                            <span>April 10 2024, 00:00am</span>
+                        </div>
+                    </div>
+                    <div class="options"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                </div>
+              
+                <p class="post-text">Stay tuned <span>@Everyone</span>! We have something amazing in store for you. Can’t wait to share it with you all! <a href="#">#StayAwesome</a> <a href="#">#chatSpace</a></p>
+                <img src="/images/feed-image-1.png" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png">120</div>
+                        <div><img src="/images/comments.png">30</div>
+                        <div><img src="/images/share.png">5</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile.jpg">
+                        <div>
+                            <p>Lanky Jo</p>
+                            <span>June 10 2024, 07:00pm</span>
+                        </div>
+                    </div>
+                    <div class="options"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                </div>
+              
+                <p class="post-text">If you could travel anywhere in the world, where would you go and why? Share your dream destinations! <a href="#">#ShareAwesome</a></p>
+                <img src="/images/feed-image-2.png" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like.png">13</div>
+                        <div><img src="/images/comments.png">2</div>
+                        <div><img src="/images/share.png"></div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile.jpg">
+                        <div>
+                            <p>Lanky Jo</p>
+                            <span>June 10 2023, 03:00pm</span>
+                        </div>
+                    </div>
+                    <div class="options"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                </div>
+              
+                <p class="post-text">Remember this amazing moment from last year? Share your favorite memories in the comments! <a href="#">#ShareAwesome</a></p>
+                <img src="/images/feed-image-3.png" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like.png">103</div>
+                        <div><img src="/images/comments.png">72</div>
+                        <div><img src="/images/share.png">3</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile.jpg">
+                        <div>
+                            <p>Lanky Jo</p>
+                            <span>May 5 2024, 02:14pm</span>
+                        </div>
+                    </div>
+                    <div class="options"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                </div>
+              
+                <p class="post-text">What’s your favorite way to unwind after a long day? <br>
+                    a) Reading a book <br>
+                    b) Watching TV <br>
+                    c) Exercising <br>
+                    d) Other (comment below!) <a href="#">#ShareAwesome</a></p>
+                <img src="/images/feed-image-4.png" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png">103k</div>
+                        <div><img src="/images/comments.png">950</div>
+                        <div><img src="/images/share.png">64k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile.jpg">
+                        <div>
+                            <p>Lanky Jo</p>
+                            <span>May 5 2024, 02:14pm</span>
+                        </div>
+                    </div>
+                    <div class="options"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                </div>
+              
+                <p class="post-text">"Shoutout to <span>Lanky Jo</span>! Thank you for being an active member of our community. We appreciate you!"
+
+                    <a href="#">#ShareAwesome</a></p>
+                <img src="/images/profile.jpg" class="post-image">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png">103k</div>
+                        <div><img src="/images/comments.png">950</div>
+                        <div><img src="/images/share.png">64k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- '''''''''''RIGHT SIDE''''''''''''''''' -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Don't Watch Porn</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Attend wedding</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="/images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Convos</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="/images/member-1.png">
+                </div>
+                <p>Allison Greta</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="/images/member-2.png">
+                </div>
+                <p>Moses Phil</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="/images/member-3.png">
+                </div>
+                <p>Anna Elvis</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const darkbtn = document.getElementById('dark-btn')
+
+        function settingsToggle() {
+            const settings = document.querySelector('.settings-menu');
+            settings.classList.toggle('max-heiht')
+        }
+        function darkToggle(){
+            darkbtn.classList.toggle('dark-btn-on')
+            document.body.classList.toggle('dark-theme')
+
+
+
+            if(localStorage.getItem('theme')== 'light'){
+                localStorage.setItem('theme', 'dark')
+            }
+            else{
+                localStorage.setItem('theme', 'light')
+            }
+        }
+
+        if(localStorage.getItem('theme')=='light'){
+            darkbtn.classList.remove('dark-btn-on')
+            document.body.classList.remove('dark-theme')
+        }
+        else if(localStorage.getItem('theme')=='dark'){
+            darkbtn.classList.add('dark-btn-on')
+            document.body.classList.add('dark-theme')
+        }
+        else{
+        localStorage.setItem('theme', 'light')
+        }
+
+    </script>
+</body>
+</html>
